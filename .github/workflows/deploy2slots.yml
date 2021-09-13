@@ -88,12 +88,6 @@ jobs:
     runs-on: windows-latest
     steps:
       
-      # get values of the PR and store in env var
-      - name: Get PR values
-        uses: abelsquidhead/GetPRNameAction@master
-        with:
-          myToken: ${{ secrets.GITHUB_TOKEN }}
-
       # delete staging slot
       - name: Delete staging slot
         env:
