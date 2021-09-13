@@ -13,7 +13,7 @@ jobs:
       
     # checkout code from repo
     - name: Checkout code
-      uses: actions/checkout@v1
+      uses: actions/checkout@v2
         
     # setup nuget
     - name: Setup nuget
