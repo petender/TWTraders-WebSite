@@ -60,12 +60,6 @@ jobs:
           echo ls
           ls
 
-      # get values of the PR and store in env var
-      - name: Get PR values
-        uses: abelsquidhead/GetPRNameAction@master
-        with:
-          myToken: ${{ secrets.GITHUB_TOKEN }}
-
       # deploy web app
       - name: Deploy web app to correct slot
         env:
