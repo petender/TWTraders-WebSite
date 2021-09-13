@@ -5,16 +5,7 @@ on:
     branches:
     - master
 jobs:
-  createPRWorkItemInAzD:
-    if: (github.event_name == 'pull_request' && github.event.action != 'closed')
-    runs-on: windows-latest
-    steps:
-    - name: Create PR Work Item
-      uses: abelsquidhead/ADOELPCustomAction-CreateAzDWorkItem@master
-      with:
-        myInput: "This is my input!!!"
-        myToken: ${{ secrets.GITHUB_TOKEN }}
-  
+    
   build:
     if: (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: windows-latest
