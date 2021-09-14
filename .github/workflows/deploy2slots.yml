@@ -68,7 +68,7 @@ jobs:
           RESOURCE_GROUP: TailwindTradersRG
           WEB_APP_NAME: tailwindtradersgk54hdf3a7sng
           PATH_TO_WEBSITE_ZIP: ./Tailwind.Traders.web.zip
-          PR_NUMBER: 11
+          PR_NUMBER: 16
         run: |
           az login --service-principal --username ${SERVICE_PRINCIPAL} --password ${{ secrets.SERVICE_PRINCIPAL_SECRET }} --tenant ${SERVICE_PRINCIPAL_TENANT}
           az webapp deployment slot create --name ${WEB_APP_NAME} --resource-group ${RESOURCE_GROUP} --slot TailwindsTraders-pr-${PR_NUMBER}
@@ -79,7 +79,7 @@ jobs:
         uses: thollander/actions-comment-pull-request@1.0.0
         with:
           # Message that should be printed in the pull request
-          message: Created staging environment - https://abeltailwindstraders-tailwindstraders-pr-19.azurewebsites.net/
+          message: Created staging environment - tailwindtradersgk54hdf3a7sng-TailwindsTraders-pr-11.azurewebsites.net/
           # Github token of the repository (automatically created by Github)
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
