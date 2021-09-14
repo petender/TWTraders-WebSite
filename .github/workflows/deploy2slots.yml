@@ -68,7 +68,7 @@ jobs:
           RESOURCE_GROUP: TailwindTradersRG
           WEB_APP_NAME: tailwindtradersgk54hdf3a7sng
           PATH_TO_WEBSITE_ZIP: ./Tailwind.Traders.web.zip
-          PR_NUMBER: 35
+          PR_NUMBER: 11
         run: |
           az login --service-principal --username ${SERVICE_PRINCIPAL} --password ${{ secrets.SERVICE_PRINCIPAL_SECRET }} --tenant ${SERVICE_PRINCIPAL_TENANT}
           az webapp deployment slot create --name ${WEB_APP_NAME} --resource-group ${RESOURCE_GROUP} --slot TailwindsTraders-pr-${PR_NUMBER}
