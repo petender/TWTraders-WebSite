@@ -6,7 +6,8 @@
 
 You can take a look at our live running website following this address: [https://tailwindtraders.com](https://tailwindtraders.com)
 
-# Repositories
+# Repositorie
+changed by peter
 
 For this demo reference, we built several consumer and line-of-business applications and a set of backend services. You can find all repositories in the following locations:
 
@@ -20,6 +21,9 @@ For this demo reference, we built several consumer and line-of-business applicat
 # Deploy to Azure
 
 With the following ARM template you can automate the creation of the resources for this website.
+
+//new change
+// some other change
 
 [![Deploy to Azure](Documents/Images/deploy-to-azure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoft%2FTailwindTraders-Website%2Fmaster%2FDeploy%2Fdeployment.json)
 
@@ -133,3 +137,7 @@ provided by the bot. You will only need to do this once across all repos using o
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+reach out if you want to test something test
+
+something added here
+
