@@ -20,6 +20,8 @@ For this demo reference, we built several consumer and line-of-business applicat
 
 # Deploy to Azure
 
+## subtitle for peter's demo
+
 With the following ARM template you can automate the creation of the resources for this website.
 
 //new change
